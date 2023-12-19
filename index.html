@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+    <a href=""></a>
   <body>
+        <div id="loader">
+        <h1>0%</h1>
+    </div>
+
+
+    <div class="page"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
     <nav id="desktop-nav">
       <div class="logo">Pacharaphon Surattanakul</div>
       <div>
@@ -38,7 +50,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img class="img-round " src="11zon_cropped.png" alt="John Doe profile picture" />
+        <img class="img-round " src="assets/11zon_cropped.png" alt="John Doe profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -47,7 +59,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets')"
+            onclick="window.open ('./assets/resume-example.pdf.pdf')"
           >
             Download CV
           </button>
@@ -56,17 +68,14 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
+
+          <a href="https://github.com/" target="_blank">
+            <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+          </a>
+          
           />
         </div>
       </div>
@@ -77,7 +86,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/11zon_cropped.png"
             alt="Profile picture"
             class="about-pic"
           />
