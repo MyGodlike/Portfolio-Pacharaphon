@@ -112,6 +112,7 @@ p {
   font-weight: 800;
   opacity: 0;
   animation: leftSideAni 1s ease forwards;
+  color: #D1D9E6;
 }
 
 .logo a {
