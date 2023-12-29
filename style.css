@@ -58,8 +58,6 @@ body {
 
 
 
-
-
 :root {
   --primary-color: #33383C;
 }
@@ -68,6 +66,13 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+div.logo {
+  max-width: 100%;
+  height: auto !important;
+  top: auto;
+
 }
 
 
@@ -108,8 +113,8 @@ p {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 0.5rem;
+  font-weight: 20;
   opacity: 0;
   animation: leftSideAni 1s ease forwards;
   color: #D1D9E6;
@@ -806,6 +811,8 @@ article .icon {
   height: 2.5rem;
 }
 
+
+  
 /* FOOTER SECTION */
 
 footer {
