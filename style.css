@@ -12,6 +12,32 @@
   }
 }
 
+/* สไตล์ทั่วไปสำหรับทุกขนาดหน้าจอ */
+body {
+  font-size: 16px;
+}
+
+/* ใช้ media query เพื่อปรับขนาดตามหน้าจอเล็ก (max-width 600px) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* ใช้ media query เพื่อปรับขนาดตามหน้าจอขนาดกลาง (600px - 1200px) */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* ใช้ media query เพื่อปรับขนาดตามหน้าจอขนาดใหญ่ (min-width 1201px) */
+@media only screen and (min-width: 1201px) {
+  body {
+    font-size: 20px;
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -2532,13 +2558,13 @@ li a:hover {
 
 .slider-wrapper {
 	position: relative;
-	max-width: 350rem;
+	max-width: 90rem;
 	margin: 0 auto;
 }
 
 .slider {
 	display: flex;
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 21 / 12;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
@@ -2546,10 +2572,16 @@ li a:hover {
 	border-radius: 0.5rem;
 	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar Firefox */
+  
+}
+.slide-1{
+
+  border-image: fill 0 linear-gradient(#0001,#000);
 }
 
+
 /* Hide scrollbar for Chrome, Safari and Opera */
-.slider::-webkit-scrollbar {
+.slide-1::-webkit-scrollbar {
 	display: none;
 }
 
