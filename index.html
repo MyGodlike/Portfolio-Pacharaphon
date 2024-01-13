@@ -213,7 +213,8 @@
             </button>
         </div>
           <div class="images">
-            <img src="assets/11zon_cropped.png" alt="" class="img-w">
+            <div class="frame" id="frame"></div>    
+            <img src="assets/profile.png" alt="" class="img-w">
           </div>
         </div>
         <div class="section__text">
@@ -240,10 +241,11 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/profile2.png"
             alt="Profile picture"
             class="about-pic"
           />
+            
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -267,19 +269,20 @@
               />
               <p>Education</p>
               <br>
-              <p>Bangsaphan Wittaya School
-                Line of study: Science-Mathematics
+              <p>Elementary School Level :AnubanBangsaphan  School
+              </p>
+              <br>
+              <p>Lower Secondary School Level :BangsaphanWitthaya School</p>
+              <br>
+              <p>
+                Upper Secondary School Level :BangsaphanWitthaya School 
               </p>
             </div>
           </div>
           <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+            <p class="about"><b>กระผมนายพัชรพล สุรัตนกูล ชื่อเล่นชื่อ ซัน  อายุ 15ปี แผนการเรียนปัจจุบัน  คณิตศาสตร์-วิทยาศาสตร์ (SME)  คติประจำใจของกระผม คือ กล้าคิด พูด และทำ 
+              </b> 
+              
             </p>
           </div>
         </div>
@@ -300,7 +303,7 @@
         <span style="--i:18;"></span>
         <span style="--i:16;"></span>
         <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
+        <span style="--i:20;"></span>   
         <span style="--i:22;"></span>
         <span style="--i:25;"></span>
         <span style="--i:18;"></span>
@@ -598,5 +601,11 @@
       </nav>
       <p>Copyright © 2024 Pacharaphon Surattanakul. All Rights Reserved.</p>
     </footer>
+    <script>
+      const frame = document.getElementById('frame');
+      const updateFrameColor = () => frame.style.borderColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+      updateFrameColor();
+      setInterval(updateFrameColor, 1300);
+    </script>
   </body>
 </html>
