@@ -12,31 +12,10 @@
   }
 }
 
+
 /* สไตล์ทั่วไปสำหรับทุกขนาดหน้าจอ */
-body {
-  font-size: 16px;
-}
 
-/* ใช้ media query เพื่อปรับขนาดตามหน้าจอเล็ก (max-width 600px) */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-}
 
-/* ใช้ media query เพื่อปรับขนาดตามหน้าจอขนาดกลาง (600px - 1200px) */
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* ใช้ media query เพื่อปรับขนาดตามหน้าจอขนาดใหญ่ (min-width 1201px) */
-@media only screen and (min-width: 1201px) {
-  body {
-    font-size: 20px;
-  }
-}
 
 
 @media screen and (max-width: 1200px) {
@@ -145,17 +124,11 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: none; }
+
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  box-sizing: border-box; }
 
 
 
@@ -1618,9 +1591,7 @@ h1 {
   padding: 0;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -2118,12 +2089,7 @@ footer p {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Outfit', sans-serif;
-    background-color: #000000;
-    height: 100vh;
-    color: #ffffff;
-}
+
 /* Genral */
 .container {
     padding: 0 8.4rem;
@@ -2388,9 +2354,7 @@ li a:hover {
 }
 
 @media screen and (max-width:600px) {
-    body {
-        height: auto;
-    }
+   
     header {
         height: auto;
         background-color: var(--primary-dark);
@@ -2748,4 +2712,115 @@ li a:hover {
 
 
 
+.cards {
+  position: relative;
+}
+
+
+.cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  padding-top: 20%;
+}
+
+.card {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 14rem;
+  padding: 1.5em ;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1em;
+  color: #eceff1;
+  background-color: #000000;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+}
+
+
+
+.card:nth-child(2) {
+  --hue: 291.34;
+  --saturation: 95.9%;
+  --lightness: 61.76%;
+  right: auto;
+  margin-top: 
+  a ;
+}
+
+.card:nth-child(1) {
+  --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+  
+}
+
+
+.card:nth-child(3) {
+  --hue: 190;
+  --saturation: 100%;
+  --lightness: 48.04%;
+  
+}
+
+
+
+
+
+
+
+
+.cta {
+  display: block;
+  align-self: end;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0.7em;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--opacity, 0);
+  -webkit-mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
+.overlay .card {
+  background-color: hsla(var(--hsl), 0.15);
+  border-color: hsla(var(--hsl), 1);
+  box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+}
+
+.overlay .cta {
+  display: block;
+  grid-row: -1;
+  width: 100%;
+  background-color: hsl(var(--hsl));
+  box-shadow: 0 0 0 1px hsl(var(--hsl));
+}
+
+body{
+  background-color: rgb(0, 0, 0);
+}
 

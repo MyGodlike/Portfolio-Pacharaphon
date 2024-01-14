@@ -1,11 +1,4 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
-
-  
+console.clear();
 
 const cardsContainer = document.querySelector(".cards");
 const cardsContainerInner = document.querySelector(".cards__inner");
@@ -13,12 +6,13 @@ const cards = Array.from(document.querySelectorAll(".card"));
 const overlay = document.querySelector(".overlay");
 
 const applyOverlayMask = (e) => {
-  const overlayEl = e.currentTarget;
-  const x = e.pageX - cardsContainer.offsetLeft;
-  const y = e.pageY - cardsContainer.offsetTop;
-
-  overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
-};
+    const overlayEl = e.currentTarget;
+    const x = e.clientX - cardsContainer.getBoundingClientRect().left;
+    const y = e.clientY - cardsContainer.getBoundingClientRect().top;
+  
+    overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
+  };
+  
 
 const createOverlayCta = (overlayCard, ctaEl) => {
   const overlayCta = document.createElement("div");
@@ -26,7 +20,7 @@ const createOverlayCta = (overlayCard, ctaEl) => {
   overlayCta.textContent = ctaEl.textContent;
   overlayCta.setAttribute("aria-hidden", true);
   overlayCard.append(overlayCta);
-};
+};  
 
 const observer = new ResizeObserver((entries) => {
   entries.forEach((entry) => {
@@ -52,3 +46,15 @@ const initOverlayCard = (cardEl) => {
 cards.forEach(initOverlayCard);
 document.body.addEventListener("pointermove", applyOverlayMask);
 
+
+overlayEl.style.opacity = 1;
+overlayEl.style.left = "auto";  // เปลี่ยน left เป็น auto
+overlayEl.style.top = "auto";   // เปลี่ยน top เป็น auto
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Hide preloader when content is loaded
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+  });

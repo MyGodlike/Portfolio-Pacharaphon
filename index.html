@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Paharaphon</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="wedsite icon"  type="png" href="assets/e0333cd04767868ccbb05fcc8ebcd983.png">
+    <link rel="stylesheet" href="script.js">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
   </head> 
+  
   <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    
     <div id="navbar">
       <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
       <h1>3D Solar System<br><span>by <a href="mailto:wasdf89@gmail.com" target="_blank">Pacharaphon</a></span></h1>
@@ -26,26 +32,7 @@
       <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
       <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
     </div>
-    <div id="controls">
-      <label class="set-view">
-        <input type="checkbox">
-      </label>
-      <label class="set-zoom">
-        <input type="checkbox">
-      </label>
-      <label>
-        <input type="radio" class="set-speed" name="scale" checked>
-        <span>Speed</span>
-      </label>
-      <label>
-        <input type="radio" class="set-size" name="scale">
-        <span>Size</span>
-      </label>
-      <label>
-        <input type="radio" class="set-distance" name="scale">
-        <span>Distance</span>
-      </label>
-    </div>
+   
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="earth">
@@ -180,7 +167,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Activities" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -219,11 +206,9 @@
           </div>
         </div>
         <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Pacharaphon Surattanakul</h1>
-          <span class="text">
-            Student
-        </span>
+          <p class="section__text__p1"> I'm <br>Pacharaphon Surattanakul </p>
+          
+        
           <div class="btn-container">
               <button class="btn btn-color-2" onclick="window.open ('./assets/PORTFOLIO-Pacharaphon.pdf')">
                   Download DC
@@ -238,52 +223,87 @@
 
     </section>
     <section id="about">
-      
-      
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile2.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-            
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              
-            <p>about</p>
-             
-              <p>6 month <br />Frontend Development</p>
+      <body>
+        <main class="main flow">
+          <h1 class="main__heading">Pricing</h1>
+          <div class="main__cards cards">
+            <div class="cards__inner">
+              <div class="cards__card card">
+                <h2 class="card__heading">PROFILE</h2>
+                <p class="card__price">PROFILE</p>
+                <ul role="list" class="card__bullets flow">
+                  ชื่อ : นายพัชรพล สุรัตนกูล
+                  ชื่อเล่น : ซัน
+                วันเกิด : 17 เมษายน 2551
+อายุ : 15 ปี
+น้ำ หนัก : 60
+ส่วนสูง : 170
+เชื้อชาติ : ไทย
+สัญชาติ : ไทย
+ศาสนา : พุทธ
+กรุ๊ปเลือด : A
+แผนการเรียน : คณิตศาสตร์-วิทยาศาสตร์
+คติประจำ ใจ : กล้าคิด พูด และทำ <br>งานอดิเรก : ฝึก New Skills
+work out
+อ่านหนังสือ
+ฟังเพลง <br>ความสามารถ : คณิตคิดเร็ว
+ประกอบคอมพิวเตอร์
+HTML javascript java CSS <br>
+กีฬาฟุตบอล / วอลเลย์บอล
+                </ul>
+                <a href="#basic" class="card__cta cta"></a>
+              </div>
+    
+              <div class="cards__card card">
+                <h2 class="card__heading">EDUCATION</h2>
+                <p class="card__price">EDUCATION</p>
+                <ul role="list" class="card__bullets flow">
+                  ระดับประถมศึกษา :โรงเรียนอนุบาลบางสะพาน <br>
+                  ระดับมัธยมศึกษาตอนต้น :โรงเรียนบางสะพานวิทยา<br> 
+                  แผนการเรียน  ห้องโครงการGifted and
+                  Talent Education Program  <br>GPAX : 3.52 <br>
+                  ระดับมัธยมศึกษาตอนปลาย :โรงเรียนบางสะพานวิทยา<br>
+                  แผนการเรียน : ห้องโครงการ Science Math
+                  environment <br>
+                  GPAX :
+                </ul>
+                <a href="#Pro" class="card__cta cta"></a>
+              </div>
+    
+              <div class="cards__card card">
+                <h2 class="card__heading">REASON FOR WANTING TO STUDY</h2>
+                <p class="card__price">REASON FOR WANTING TO STUDY</p>
+                <ul role="list" class="card__bullets flow">
+                  เหตุผลที่อยากเข้าคณะนี้
+เหตุผลที่ทำ ให้กระผมอยากเข้ามาเรียนในคณะนี้ เนื่องจากส่วนตัว
+กิฉันเป็นคนที่ชอบเรียนวิชาคำ นวณมากๆ โดยเฉพาะวิชาฟิสิกส์และวิชาเคมี
+เพราะมันมีความซับซ้อนและนำ คันหามากกว่าวิชาที่ต้องใช้การท่องจำ
+กระผมรู้สึกสนุกทุกครั้งที่ได้ทำ โจทย์ หรือได้คิดสิ่งต่างๆด้วยตนเอง
+อีกทั้งนิสัยส่วนตัวกระผมเป็นคนที่ค่อนข้างจริงจังในการทำ งานเป็นอย่างมาก
+ชอบการวางแผนต่างๆ และทุกๆครั้งที่มีงานกลุ่ม กระผมจะเป็นคนที่คอยควบคุมเพื่อนๆ
+และวางแผนการทำ งานต่างๆเพื่อให้งานออกมาสมบูรณ์แบบและเสร็จทันเวลาอยู่เสมอ
+และอีกสิ่งที่กระผมชื่นชอบที่สุดโดยการทำ สิ่งประดิษฐ์การทำ สิ่งประดิษฐ์
+ได้ให้อะไรหลายๆอย่างกับกระผม ไม่ว่าจะเป็นกระบวนการคิด การวางแผน
+และการแก้ปัญหาต่างๆ ซึ่งมันเป็นเครื่องยืนยันให้กับกระผมว่าจะต้องมาเรียนในคณะนี้
+จากที่ดิฉันเคยคิดว่าอยากเข้าคณะนี้อยู่แล้วมันก็ยิ่งทำ ให้มีความมั่นใจเพิ่มขึ้นไปอีก
+ว่ากระผมจะต้องมาทางสายงานวิศวะอย่างแน่นอนด้วยประสบการณ์ต่างๆ
+รวมทั้งกิจกรรมของกระผมทั้งหมดในแฟัมสะสมผลงานเล่มนี้จึงเป็นที่ยืนยันในความสามารถ
+ที่กระผมมีและกระผมเชื่อว่ากระผมนั้นจะเป็นหนึ่งในนักศึกษาคุณภาพของมหาวิทยาลัย
+และเมื่อถึงวันนั้นดิฉันจะนำ ความรู้และสิ่งต่างๆที่ได้จากมหาวิทยาลัยไปใช้ในการพัฒนา
+บ้านเมืองและประเทศชาติสืบต่อไป
+
+                </ul>
+                <a href="#ultimate" class="card__cta cta"></a>
+              </div>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education1.png
-                "
-                alt="Education icon"
-                class="icon"
-              />
-              <p>Education</p>
-              <br>
-              <p>Elementary School Level :AnubanBangsaphan  School
-              </p>
-              <br>
-              <p>Lower Secondary School Level :BangsaphanWitthaya School</p>
-              <br>
-              <p>
-                Upper Secondary School Level :BangsaphanWitthaya School 
-              </p>
-            </div>
+    
+            <div class="overlay cards__inner"></div>
           </div>
-         
-        </div>
-      </div>
+        </main>
+        
+        <script src="index.js"></script>
+      </body>
+      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -332,7 +352,8 @@
         <span style="--i:13;"></span>
         <span style="--i:11;"></span>
     </section>
-    <section class="container">
+    <section id="experience">
+    
       <div class="container">
         <div
           class="box box-1"
@@ -407,94 +428,36 @@
       </div>
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://s.cafebazaar.ir/images/upload/screenshot/com.educationterraapp.TDSolarSystem-e174cb7b-d239-480a-9ff5-05f76e7a4718.webp"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/MyGodlike/Solar-System-main'" 
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mygodlike.github.io/Solar-System-main/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="container">
+        <div
+          class="box box-1"
+          style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1196131307189698620/image.png?ex=65b68316&is=65a40e16&hm=43ddc836f8bcdeed89688c468f5f8c9ccfd161de514629b66cfb383ceb9262e5&)"
+          
+        ></div>
+        <div
+          class="box box-2"
+          style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1196131385946157246/image.png?ex=65b68329&is=65a40e29&hm=f3581ba6d18283590ab4c8d55489dade7d96b9434bfa1519007582a9aa15d2a7&)"
+          
+        ></div>
+        <div
+          class="box box-3"
+          style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1196131439855542364/image.png?ex=65b68336&is=65a40e36&hm=605b746e6f13dcd0f20abc5f56962da720683134c67fdafc4715ab2ae4139339&=&format=webp&quality=lossless&width=1111&height=702)"
+          
+        ></div>
+        <div
+          class="box box-4"
+          style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1196131505186033714/image.png?ex=65b68345&is=65a40e45&hm=a81a1726d78a4bd1bb14bd5f4fc1db82fd703e158127826fd2488ca8e17f194a&=&format=webp&quality=lossless&width=1118&height=702)"
+          
+        ></div>
+        <div
+          class="box box-5"
+          style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1196131439855542364/image.png?ex=65b68336&is=65a40e36&hm=605b746e6f13dcd0f20abc5f56962da720683134c67fdafc4715ab2ae4139339&=&format=webp&quality=lossless&width=1111&height=702)"
+          
+        ></div>
+        
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+
+      
       <div class="bubbles">
         <span style="--i:11;"></span>
         <span style="--i:12;"></span>
