@@ -15,24 +15,20 @@
   </head> 
   
   <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-    
-    <div id="navbar">
-      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
-      <h1>3D Solar System<br><span>by <a href="mailto:wasdf89@gmail.com" target="_blank">Pacharaphon</a></span></h1>
-      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
-    </div>
-    <div id="data">
-      <a class="sun" title="sun" href="#sunspeed">Sun</a>
-      <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
-      <a class="venus" title="venus" href="#venusspeed">Venus</a>
-      <a class="earth active" title="earth" href="#earthspeed">Earth</a>
-      <a class="mars" title="mars" href="#marsspeed">Mars</a>
-      <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
-      <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
-      <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
-      <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
-    </div>
-   
+    <!DOCTYPE html>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <script>
+    // แสดงโลโก้การโหลดเป็นเวลา 3 วินาทีแล้วซ่อนไว้
+    window.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('preloader').style.display = 'block'; // แสดงโลโก้การโหลด
+      setTimeout(function() {
+        document.getElementById('preloader').style.display = 'none'; // ซ่อนโลโก้การโหลดหลังจากผ่านไป 3 วินาที
+      }, 1000);
+    });
+  </script>
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="earth">
@@ -128,7 +124,7 @@
               <dd><span></span></dd>
             </dl>
           </div>
-          <div style=" text-align: right ;margin-top: 130px; "><img style="text-align: left;" src="https://media3.giphy.com/media/9GhJrdk8W0PbIoGG0n/giphy.gif?cid=ecf05e479ahto43nht91fx62js9x5k4uhixbjtdhg9na1vbh&ep=v1_gifs_related&rid=giphy.gif&ct=s" alt=""></div>
+          <div style=" text-align: right ;margin-top: 200px; "><img style="text-align: left;" src="https://i.pinimg.com/originals/46/08/a5/4608a52d1c6661c871c70380d2df011f.gif" alt=""></div>
         </div>
       </div>
     </div>
@@ -149,11 +145,18 @@
       <div class="logo"><img src="assets/e0333cd04767868ccbb05fcc8ebcd983.png" alt="" class="
         logo1" ></div>
       <div>
+        <svg width="0" height="0">
+          <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
+            <feGaussianBlur stdDeviation="35"></feGaussianBlur>
+            <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+            <feComposite in="SourceGraphic"></feComposite>
+          </filter>
+        </svg>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li></a><a href="#About">About</a></li>
+          <li><a href="#Ativity">Ativity</a></li>
+          <li><a href="#Certificat" >Certificat </a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -167,8 +170,8 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Activities" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Activities" onclick="toggleMenu()">Ativity</a></li>
+          <li><a href="#Certificat" onclick="toggleMenu()">Certificat</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -225,12 +228,12 @@
     <section id="about">
       <body>
         <main class="main flow">
-          <h1 class="main__heading">Pricing</h1>
+          
           <div class="main__cards cards">
             <div class="cards__inner">
               <div class="cards__card card">
                 <h2 class="card__heading">PROFILE</h2>
-                <p class="card__price">PROFILE</p>
+                <h5 class="card__price">PROFILE</h5>
                 <ul role="list" class="card__bullets flow">
                   ชื่อ : นายพัชรพล สุรัตนกูล
                   ชื่อเล่น : ซัน
@@ -256,7 +259,8 @@ HTML javascript java CSS <br>
     
               <div class="cards__card card">
                 <h2 class="card__heading">EDUCATION</h2>
-                <p class="card__price">EDUCATION</p>
+                <h5
+                 class="card__price">EDUCATION</h5>
                 <ul role="list" class="card__bullets flow">
                   ระดับประถมศึกษา :โรงเรียนอนุบาลบางสะพาน <br>
                   ระดับมัธยมศึกษาตอนต้น :โรงเรียนบางสะพานวิทยา<br> 
@@ -272,7 +276,7 @@ HTML javascript java CSS <br>
     
               <div class="cards__card card">
                 <h2 class="card__heading">REASON FOR WANTING TO STUDY</h2>
-                <p class="card__price">REASON FOR WANTING TO STUDY</p>
+                <h5 class="card__price">REASON FOR WANTING TO STUDY</h5>
                 <ul role="list" class="card__bullets flow">
                   เหตุผลที่อยากเข้าคณะนี้
 เหตุผลที่ทำ ให้กระผมอยากเข้ามาเรียนในคณะนี้ เนื่องจากส่วนตัว
@@ -308,7 +312,7 @@ HTML javascript java CSS <br>
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#Ativity'"
       />
       <div class="bubbles">
         <span style="--i:11;"></span>
@@ -352,7 +356,7 @@ HTML javascript java CSS <br>
         <span style="--i:13;"></span>
         <span style="--i:11;"></span>
     </section>
-    <section id="experience">
+    <section id="Ativity">
     
       <div class="container">
         <div
@@ -427,7 +431,7 @@ HTML javascript java CSS <br>
         
       </div>
     </section>
-    <section id="projects">
+    <section id="Certificat">
       <div class="container">
         <div
           class="box box-1"
@@ -501,16 +505,22 @@ HTML javascript java CSS <br>
         <span style="--i:11;"></span>
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
+        <svg width="0" height="0">
+          <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
+            <feGaussianBlur stdDeviation="35"></feGaussianBlur>
+            <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+            <feComposite in="SourceGraphic"></feComposite>
+          </filter>
+        </svg>
         <div class="contact-info-container">
           <img
             src="./assets/email1.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:wasdf89@gmail.com">wasdf1589@gmail.com</a></p>
+          <p><a href="mailto:wasdf89@gmail.com" target="_blank" >wasdf1589@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -519,7 +529,7 @@ HTML javascript java CSS <br>
             alt="ig icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.instagram.com/xs._unyx/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">xs.unyx</a></p>
+          <p><a href="https://www.instagram.com/xs._unyx/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" >xs.unyx</a></p>
         </div>
       </div>
       <div class="bubbles">
@@ -569,8 +579,8 @@ HTML javascript java CSS <br>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Ativity">Activity</a></li>
+            <li><a href="#certificate">certificate</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
         </div>
