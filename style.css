@@ -1460,6 +1460,8 @@ section {
 
 .section-container {
   display: flex;
+  margin-top: 
+  20%;
 }
 
 /* PROFILE SECTION */
@@ -1708,6 +1710,10 @@ article .icon {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+}
+
+.container{
+  margin-top: 300px;
 }
 
 .contact-info-container {
@@ -2395,22 +2401,22 @@ li a:hover {
 
 
 
-.cards {
+.xcards {
   position: relative;
 }
 
 
-.cards__inner {
+.xcards__inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5em;
+  gap: 9em;
   padding-top: 20%;
 }
 
-.card {
-  --flow-space: 0.5em;
+.xcard {
+  --flow-space: 0.1em;
   --hsl: var(--hue), var(--saturation), var(--lightness);
-  flex: 1 1 14rem;
+  flex: 1 1 22rem;
   padding: 1.5em ;
   display: grid;
   grid-template-rows: auto auto auto 1fr;
@@ -2424,7 +2430,7 @@ li a:hover {
 
 
 
-.card:nth-child(2) {
+.xcard:nth-child(2) {
   --hue: 291.34;
   --saturation: 95.9%;
   --lightness: 61.76%;
@@ -2433,7 +2439,7 @@ li a:hover {
   a ;
 }
 
-.card:nth-child(1) {
+.xcard:nth-child(1) {
   --hue: 338.69;
   --saturation: 100%;
   --lightness: 48.04%;
@@ -2441,7 +2447,7 @@ li a:hover {
 }
 
 
-.card:nth-child(3) {
+.xcard:nth-child(3) {
   --hue: 190;
   --saturation: 100%;
   --lightness: 48.04%;
@@ -2489,7 +2495,7 @@ li a:hover {
   will-change: mask;
 }
 
-.overlay .card {
+.overlay .xcard {
   background-color: hsla(var(--hsl), 0.15);
   border-color: hsla(var(--hsl), 1);
   box-shadow: 0 0 0 1px inset hsl(var(--hsl));
@@ -2605,3 +2611,13 @@ body{
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
