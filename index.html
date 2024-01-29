@@ -1,487 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Paharaphon</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="wedsite icon"  type="png" href="assets/e0333cd04767868ccbb05fcc8ebcd983.png">
-    <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"/>
-    <link rel="stylesheet" href="1.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  </head> 
-  
-  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-    <!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Paharaphon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="wedsite icon" type="png" href="assets/e0333cd04767868ccbb05fcc8ebcd983.png">
+  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js" />
+  <link rel="stylesheet" href="1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="opening hide-UI view-2D zoom-large data-close controls-close">
+  <!DOCTYPE html>
 
   <div id="preloader">
     <div id="loader"></div>
   </div>
   <script>
     // แสดงโลโก้การโหลดเป็นเวลา 3 วินาทีแล้วซ่อนไว้
-    window.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('DOMContentLoaded', function () {
       document.getElementById('preloader').style.display = 'block'; // แสดงโลโก้การโหลด
-      setTimeout(function() {
+      setTimeout(function () {
         document.getElementById('preloader').style.display = 'none'; // ซ่อนโลโก้การโหลดหลังจากผ่านไป 3 วินาที
       }, 1000);
     });
   </script>
-    <div id="universe" class="scale-stretched">
-      <div id="galaxy">
-        <div id="solar-system" class="earth">
-          <div id="mercury" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Mercury</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
+  <div id="universe" class="scale-stretched">
+    <div id="galaxy">
+      <div id="solar-system" class="earth">
+        <div id="mercury" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Mercury</dt>
+                <dd><span></span></dd>
+              </dl>
             </div>
           </div>
-          <div id="venus" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Venus</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="earth" class="orbit">
-            <div class="pos">
-              <div class="orbit">
-                <div class="pos">
-                  <div class="moon"></div>
-                </div>
-              </div>
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Earth</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="mars" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Mars</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="jupiter" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Jupiter</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="saturn" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <div class="ring"></div>
-                <dl class="infos">
-                  <dt>Saturn</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="uranus" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Uranus</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="neptune" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Neptune</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="sun">
-            <dl class="infos">
-              <dt>Sun</dt>
-              <dd><span></span></dd>
-            </dl>
-          </div>
-          <div style=" text-align: right ;margin-top: 200px; "><img style="text-align: left;" src="https://i.pinimg.com/originals/46/08/a5/4608a52d1c6661c871c70380d2df011f.gif" alt=""></div>
         </div>
+        <div id="venus" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Venus</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="earth" class="orbit">
+          <div class="pos">
+            <div class="orbit">
+              <div class="pos">
+                <div class="moon"></div>
+              </div>
+            </div>
+            <div class="planet">
+              <dl class="infos">
+                <dt>Earth</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="mars" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Mars</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="jupiter" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Jupiter</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="saturn" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <div class="ring"></div>
+              <dl class="infos">
+                <dt>Saturn</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="uranus" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Uranus</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="neptune" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Neptune</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="sun">
+          <dl class="infos">
+            <dt>Sun</dt>
+            <dd><span></span></dd>
+          </dl>
+        </div>
+        <div style=" text-align: right ;margin-top: 200px; "><img style="text-align: left;"
+            src="https://i.pinimg.com/originals/46/08/a5/4608a52d1c6661c871c70380d2df011f.gif" alt=""></div>
       </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    if (typeof jQuery == 'undefined') { 
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
       document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
-    </script>
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-  </body>
+  </script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
 <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-  <body id="main">
-    
-    <nav id="desktop-nav">
-      <div class="logo"><img src="assets/e0333cd04767868ccbb05fcc8ebcd983.png" alt="" class="
-        logo1" ></div>
-      <div>
-        <svg width="0" height="0">
-          <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
-            <feGaussianBlur stdDeviation="35"></feGaussianBlur>
-            <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
-            <feComposite in="SourceGraphic"></feComposite>
-          </filter>
-        </svg>
-        <ul class="nav-links">
-          <li></a><a href="#About">About</a></li>
-          <li><a href="#Ativity">Ativity</a></li>
-          <li><a href="#Certificat" >Certificat </a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo"><img src="assets/e0333cd04767868ccbb05fcc8ebcd983.png" alt=""class="logo1" ></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Activities" onclick="toggleMenu()">Ativity</a></li>
-          <li><a href="#Certificat" onclick="toggleMenu()">Certificat</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
-        </div>
-      </div>
-    </nav>
-    
-      <div <div class="rounding-sec">
-        <div class="big-circle">
-            <button class="icon-block"  >
-               <a href="mailto:wasdf1589@gmail.com" target="_blank">
-                <img src="assets/pngwing.com.png"
-                alt="">
-               </a>
-            </button>
-            <button class="icon-block">
-               <a href="https://www.instagram.com/xs._unyx/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
-                <img src="assets/1161953_instagram_icon.png"
-                 alt="" />
-               </a>
-            </button>
-            <button class="icon-block">
-                <a href=
-                "https://t.me/xs_unyx" target="_blank"> 
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-WWnXxgKNxwqarx8Vr_xpaCcwOQbv7bpFxWXy1o7DCq7jZNiT3CFdAo52AvJol-C-3InAzj6B4isdJVwVCAlUY9jxqgM43wDXrmfsqL4PGr-fsBG0YjcOzwAHFscoDXg3EGlhupxjKRwrMe7Y2bX9VzTc-RY95A03bV1avKnjwJZjh0HKbGZDEa73mPU/s1600/telegram.png"
-                alt="" />
-              </a>
-            </button>
-            <button class="icon-block">
-                <a href="https://www.youtube.com/channel/UCf5NJT-_Vm8Jj0tmbTWPgMg 
-                " target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejpFbnjtnjhErKo-66_ATecAMmYtSrLzQYdIRMRAxLHtgMUZKnA6jGJQsTMnrniZmMhTZydWkR-l2cpZcGEBGlI4Ptl9ogR-NSPF2wNO5FQdMlL_xaGHQfPnSRIh0Lg4JX0PJLjg9p-tAL9Y8qFbbuGIW3YoolXiMja2qujyDjcFPYGzsPu-RyHle2Jc/s1600/youtube.png"  alt=""  /></a>
-            </button>
-        </div>
-          <div class="images">
-            <div class="frame" id="frame"></div>    
-            <img src="assets/profile.png" alt="" class="img-w">
-          </div>
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1"> I'm <br>Pacharaphon Surattanakul </p>
-          
-        
-          <div class="btn-container">
-              <button class="btn btn-color-2" onclick="window.open ('./assets/PORTFOLIO-Pacharaphon.pdf')">
-                  Download DC
-              </button>
-              <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                  Contact Info
-              </button>
-          </div>
-        </div>
-      </div>  
-      </div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="./script.js"></script>
 
-    </section>
-    <section id="About">
-      
-        <main class="main flow">
-          
-          <div class="main__xcards xcards">
-            <div class="xcards__inner">
-              <div class="xcards__xcard xcard">
-                <h2 class="xcard__heading">PROFILE</h2>
-                <h5 class="xcard__price">PROFILE</h5>
-                <ul role="list" class="xcard__bullets flow">
-                  ชื่อ : นายพัชรพล สุรัตนกูล
-                  ชื่อเล่น : ซัน
-                วันเกิด : 17 เมษายน 2551อายุ : 15 ปีน้ำ หนัก : 60ส่วนสูง : 170เชื้อชาติ : ไทยสัญชาติ : ไทยศาสนา : พุทธกรุ๊ปเลือด : Aแผนการเรียน : คณิตศาสตร์-วิทยาศาสตร์คติประจำ ใจ : กล้าคิด พูด และทำ <br>งานอดิเรก : ฝึก New Skillswork outอ่านหนังสือฟังเพลง <br>ความสามารถ : คณิตคิดเร็วประกอบคอมพิวเตอร์HTML javascript java CSS <br>กีฬาฟุตบอล / วอลเลย์บอล
-                </ul>
-                <a href="#basic" class="xcard__cta cta"></a>
-              </div>
-    
-              <div class="xcards__xcard xcard">
-                <h2 class="xcard__heading">EDUCATION</h2>
-                <h5
-                 class="xcard__price">EDUCATION</h5>
-                <ul role="list" class="xcard__bullets flow">
-                  ระดับประถมศึกษา :โรงเรียนอนุบาลบางสะพาน <br>
-                  ระดับมัธยมศึกษาตอนต้น :โรงเรียนบางสะพานวิทยา<br> 
-                  แผนการเรียน  ห้องโครงการGifted and
-                  Talent Education Program  <br>GPAX : 3.52 <br>
-                  ระดับมัธยมศึกษาตอนปลาย :โรงเรียนบางสะพานวิทยา<br>
-                  แผนการเรียน : ห้องโครงการ Science Math
-                  environment <br>
-                  GPAX :
-                </ul>
-                <a href="#Pro" class="xcard__cta cta"></a>
-              </div>
-    
-              <div class="xcards__xcard xcard">
-                <h2 class="xcard__heading">REASON FOR WANTING TO STUDY</h2>
-                <h5 class="xcard__price">REASON FOR WANTING TO STUDY</h5>
-                <ul role="list" class="xcard__bullets flow">
-                  เหตุผลที่อยากเข้าคณะนี้เหตุผลที่ทำ ให้กระผมอยากเข้ามาเรียนในคณะนี้ เนื่องจากส่วนตัวกิฉันเป็นคนที่ชอบเรียนวิชาคำ นวณมากๆ โดยเฉพาะวิชาฟิสิกส์และวิชาเคมีเพราะมันมีความซับซ้อนและนำ คันหามากกว่าวิชาที่ต้องใช้การท่องจำกระผมรู้สึกสนุกทุกครั้งที่ได้ทำ โจทย์ หรือได้คิดสิ่งต่างๆด้วยตนเองอีกทั้งนิสัยส่วนตัวกระผมเป็นคนที่ค่อนข้างจริงจังในการทำ งานเป็นอย่างมากชอบการวางแผนต่างๆ และทุกๆครั้งที่มีงานกลุ่ม กระผมจะเป็นคนที่คอยควบคุมเพื่อนๆและวางแผนการทำ งานต่างๆเพื่อให้งานออกมาสมบูรณ์แบบและเสร็จทันเวลาอยู่เสมอและอีกสิ่งที่กระผมชื่นชอบที่สุดโดยการทำ สิ่งประดิษฐ์การทำ สิ่งประดิษฐ์ได้ให้อะไรหลายๆอย่างกับกระผม ไม่ว่าจะเป็นกระบวนการคิด การวางแผนและการแก้ปัญหาต่างๆ ซึ่งมันเป็นเครื่องยืนยันให้กับกระผมว่าจะต้องมาเรียนในคณะนี้จากที่ดิฉันเคยคิดว่าอยากเข้าคณะนี้อยู่แล้วมันก็ยิ่งทำ ให้มีความมั่นใจเพิ่มขึ้นไปอีกว่ากระผมจะต้องมาทางสายงานวิศวะอย่างแน่นอนด้วยประสบการณ์ต่างๆรวมทั้งกิจกรรมของกระผมทั้งหมดในแฟัมสะสมผลงานเล่มนี้จึงเป็นที่ยืนยันในความสามารถที่กระผมมีและกระผมเชื่อว่ากระผมนั้นจะเป็นหนึ่งในนักศึกษาคุณภาพของมหาวิทยาลัยและเมื่อถึงวันนั้นดิฉันจะนำ ความรู้และสิ่งต่างๆที่ได้จากมหาวิทยาลัยไปใช้ในการพัฒนาบ้านเมืองและประเทศชาติสืบต่อไป
+<body id="main">
 
-                </ul>
-                <a href="#ultimate" class="xcard__cta cta"></a>
-              </div>
-            </div>
-    
-            <div class="overlay xcards__inner"></div>
-          </div>
-        </main>
-        
-        <script src="index.js"></script>
-      </body>
-      
-      <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>   
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:11;"></span>
-    </section>
-    <section id="Ativity">
-    
-      <div class="container">
-        <div
-          class="box box-1"
-          style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1195987137477214258/412969429_839362211320246_7024503562062490216_n.jpg?ex=65b5fcd1&is=65a387d1&hm=6659b4f0010f6af95748280580f1e77d65063ab889bdd84ddd0876b472df39f8&=&format=webp&width=936&height=702)"
-          data-text="❤"
-        ></div>
-        <div
-          class="box box-2"
-          style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1195987323431702578/357392501_607248171507418_3365314890005034851_n.jpg?ex=65b5fcfe&is=65a387fe&hm=546fc1deeab31c48d7f6ce0c20029b2650aa0f7c378ff31e88d29b8f5c5fafdf&=&format=webp&width=937&height=702)"
-          data-text="🧡"
-        ></div>
-        <div
-          class="box box-3"
-          style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1195987460484776117/LINE_ALBUM_SME__240106_1.jpg?ex=65b5fd1e&is=65a3881e&hm=24f82592a9145c78b873b1c697d5d86845916647a90eb95c969829fc67e2e431&)"
-          data-text="💜"
-        ></div>
-        <div
-          class="box box-4"
-          style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1195987493598789782/415514337_380066507877838_3588551690730102205_n.jpg?ex=65b5fd26&is=65a38826&hm=14b1e481b5a19c9e97392c44a3045a60881e11511a27ba0a2c102f00c4430ca1&)"
-          data-text="💚"
-        ></div>
-        <div
-          class="box box-5"
-          style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1195987504189407242/LINE_ALBUM_412_240106_1.jpg?ex=65b5fd29&is=65a38829&hm=d584df0b7b8307ce5b49281d90c06e65d1807911e33547c0e1fb81d1e3607c8d&)"
-          data-text="💙"
-        ></div>
+  <nav id="desktop-nav">
+    <div class="logo"><img src="assets/e0333cd04767868ccbb05fcc8ebcd983.png" alt="" class="
+        logo1"></div>
+    <div>
+      <svg width="0" height="0">
+        <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
+          <feGaussianBlur stdDeviation="35"></feGaussianBlur>
+          <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+          <feComposite in="SourceGraphic"></feComposite>
+        </filter>
+      </svg>
+      <ul class="nav-links">
+        <li></a><a href="#About">About</a></li>
+        <li><a href="#Ativity">Ativity</a></li>
+        <li><a href="#Certificat">Certificat </a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo"><img src="assets/e0333cd04767868ccbb05fcc8ebcd983.png" alt="" class="logo1"></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      </section>
-        <div class="bubbles">
-          <span style="--i:11;"></span>
-          <span style="--i:12;"></span>
-          <span style="--i:24;"></span>
-          <span style="--i:10;"></span>
-          <span style="--i:14;"></span>
-          <span style="--i:23;"></span>
-          <span style="--i:18;"></span>
-          <span style="--i:16;"></span>
-          <span style="--i:19;"></span>
-          <span style="--i:20;"></span>
-          <span style="--i:22;"></span>
-          <span style="--i:25;"></span>
-          <span style="--i:18;"></span>
-          <span style="--i:21;"></span>
-          <span style="--i:15;"></span>
-          <span style="--i:13;"></span>
-          <span style="--i:26;"></span>
-          <span style="--i:17;"></span>
-          <span style="--i:13;"></span>
-          <span style="--i:11;"></span>
-          <span style="--i:11;"></span>
-          <span style="--i:12;"></span>
-          <span style="--i:24;"></span>
-          <span style="--i:10;"></span>
-          <span style="--i:14;"></span>
-          <span style="--i:23;"></span>
-          <span style="--i:18;"></span>
-          <span style="--i:16;"></span>
-          <span style="--i:19;"></span>
-          <span style="--i:20;"></span>
-          <span style="--i:22;"></span>
-          <span style="--i:25;"></span>
-          <span style="--i:18;"></span>
-          <span style="--i:21;"></span>
-          <span style="--i:15;"></span>
-          <span style="--i:13;"></span>
-          <span style="--i:26;"></span>
-          <span style="--i:17;"></span>
-          <span style="--i:13;"></span>
-          <span style="--i:11;"></span>
-      </section>
-        
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Activities" onclick="toggleMenu()">Ativity</a></li>
+        <li><a href="#Certificat" onclick="toggleMenu()">Certificat</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
       </div>
-    </section>
-    <section id="Certificat">
-      <main id="app">
-      
+    </div>
+  </nav>
 
-        <section class="cards">
-          <div class="card charizard animated"></div>
-          <div class="card pika animated"></div>
-          <div class="card eevee animated"></div>
-          <div class="card mewtwo animated"></div>
-        </section>
-        <style class="hover"></style>
-      </main>
-      <script src="index.js"></script>
-      <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:11;"></span>
-    </section>
-    <section id="contact">
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <svg width="0" height="0">
-          <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
-            <feGaussianBlur stdDeviation="35"></feGaussianBlur>
-            <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
-            <feComposite in="SourceGraphic"></feComposite>
-          </filter>
-        </svg>
-        <div class="contact-info-container">
+  <div <div class="rounding-sec">
+    <div class="big-circle">
+      <button class="icon-block">
+        <a href="mailto:wasdf1589@gmail.com" target="_blank">
+          <img src="assets/pngwing.com.png" alt="">
+        </a>
+      </button>
+      <button class="icon-block">
+        <a href="https://www.instagram.com/xs._unyx/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+          target="_blank">
+          <img src="assets/1161953_instagram_icon.png" alt="" />
+        </a>
+      </button>
+      <button class="icon-block">
+        <a href="https://t.me/xs_unyx" target="_blank">
           <img
-            src="./assets/email1.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:wasdf89@gmail.com" target="_blank" >wasdf1589@gmail.com</a></p>
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-WWnXxgKNxwqarx8Vr_xpaCcwOQbv7bpFxWXy1o7DCq7jZNiT3CFdAo52AvJol-C-3InAzj6B4isdJVwVCAlUY9jxqgM43wDXrmfsqL4PGr-fsBG0YjcOzwAHFscoDXg3EGlhupxjKRwrMe7Y2bX9VzTc-RY95A03bV1avKnjwJZjh0HKbGZDEa73mPU/s1600/telegram.png"
+            alt="" />
+        </a>
+      </button>
+      <button class="icon-block">
+        <a href="https://www.youtube.com/channel/UCf5NJT-_Vm8Jj0tmbTWPgMg 
+                " target="_blank"><img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejpFbnjtnjhErKo-66_ATecAMmYtSrLzQYdIRMRAxLHtgMUZKnA6jGJQsTMnrniZmMhTZydWkR-l2cpZcGEBGlI4Ptl9ogR-NSPF2wNO5FQdMlL_xaGHQfPnSRIh0Lg4JX0PJLjg9p-tAL9Y8qFbbuGIW3YoolXiMja2qujyDjcFPYGzsPu-RyHle2Jc/s1600/youtube.png"
+            alt="" /></a>
+      </button>
+    </div>
+    <div class="images">
+      <div class="frame" id="frame"></div>
+      <img src="assets/profile.png" alt="" class="img-w">
+    </div>
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1"> I'm <br>Pacharaphon Surattanakul </p>
+
+
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open ('./assets/PORTFOLIO-Pacharaphon.pdf')">
+        Download DC
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </section>
+  <section id="About">
+
+    <main class="main flow">
+
+      <div class="main__xcards xcards">
+        <div class="xcards__inner">
+          <div class="xcards__xcard xcard">
+            <h2 class="xcard__heading">PROFILE</h2>
+            <h5 class="xcard__price">PROFILE</h5>
+            <ul role="list" class="xcard__bullets flow">
+              ชื่อ : นายพัชรพล สุรัตนกูล
+              ชื่อเล่น : ซัน
+              วันเกิด : 17 เมษายน 2551อายุ : 15 ปีน้ำ หนัก : 60ส่วนสูง : 170เชื้อชาติ : ไทยสัญชาติ : ไทยศาสนา :
+              พุทธกรุ๊ปเลือด : Aแผนการเรียน : คณิตศาสตร์-วิทยาศาสตร์คติประจำ ใจ : กล้าคิด พูด และทำ <br>งานอดิเรก : ฝึก
+              New Skillswork outอ่านหนังสือฟังเพลง <br>ความสามารถ : คณิตคิดเร็วประกอบคอมพิวเตอร์HTML javascript java CSS
+              <br>กีฬาฟุตบอล / วอลเลย์บอล
+            </ul>
+            <a href="#basic" class="xcard__cta cta"></a>
+          </div>
+
+          <div class="xcards__xcard xcard">
+            <h2 class="xcard__heading">EDUCATION</h2>
+            <h5 class="xcard__price">EDUCATION</h5>
+            <ul role="list" class="xcard__bullets flow">
+              ระดับประถมศึกษา :โรงเรียนอนุบาลบางสะพาน <br>
+              ระดับมัธยมศึกษาตอนต้น :โรงเรียนบางสะพานวิทยา<br>
+              แผนการเรียน ห้องโครงการGifted and
+              Talent Education Program <br>GPAX : 3.52 <br>
+              ระดับมัธยมศึกษาตอนปลาย :โรงเรียนบางสะพานวิทยา<br>
+              แผนการเรียน : ห้องโครงการ Science Math
+              environment <br>
+              GPAX :
+            </ul>
+            <a href="#Pro" class="xcard__cta cta"></a>
+          </div>
+
+          <div class="xcards__xcard xcard">
+            <h2 class="xcard__heading">REASON FOR WANTING TO STUDY</h2>
+            <h5 class="xcard__price">REASON FOR WANTING TO STUDY</h5>
+            <ul role="list" class="xcard__bullets flow">
+              เหตุผลที่อยากเข้าคณะนี้เหตุผลที่ทำ ให้กระผมอยากเข้ามาเรียนในคณะนี้
+              เนื่องจากส่วนตัวกิฉันเป็นคนที่ชอบเรียนวิชาคำ นวณมากๆ
+              โดยเฉพาะวิชาฟิสิกส์และวิชาเคมีเพราะมันมีความซับซ้อนและนำ
+              คันหามากกว่าวิชาที่ต้องใช้การท่องจำกระผมรู้สึกสนุกทุกครั้งที่ได้ทำ โจทย์
+              หรือได้คิดสิ่งต่างๆด้วยตนเองอีกทั้งนิสัยส่วนตัวกระผมเป็นคนที่ค่อนข้างจริงจังในการทำ
+              งานเป็นอย่างมากชอบการวางแผนต่างๆ และทุกๆครั้งที่มีงานกลุ่ม กระผมจะเป็นคนที่คอยควบคุมเพื่อนๆและวางแผนการทำ
+              งานต่างๆเพื่อให้งานออกมาสมบูรณ์แบบและเสร็จทันเวลาอยู่เสมอและอีกสิ่งที่กระผมชื่นชอบที่สุดโดยการทำ
+              สิ่งประดิษฐ์การทำ สิ่งประดิษฐ์ได้ให้อะไรหลายๆอย่างกับกระผม ไม่ว่าจะเป็นกระบวนการคิด
+              การวางแผนและการแก้ปัญหาต่างๆ
+              ซึ่งมันเป็นเครื่องยืนยันให้กับกระผมว่าจะต้องมาเรียนในคณะนี้จากที่ดิฉันเคยคิดว่าอยากเข้าคณะนี้อยู่แล้วมันก็ยิ่งทำ
+              ให้มีความมั่นใจเพิ่มขึ้นไปอีกว่ากระผมจะต้องมาทางสายงานวิศวะอย่างแน่นอนด้วยประสบการณ์ต่างๆรวมทั้งกิจกรรมของกระผมทั้งหมดในแฟัมสะสมผลงานเล่มนี้จึงเป็นที่ยืนยันในความสามารถที่กระผมมีและกระผมเชื่อว่ากระผมนั้นจะเป็นหนึ่งในนักศึกษาคุณภาพของมหาวิทยาลัยและเมื่อถึงวันนั้นดิฉันจะนำ
+              ความรู้และสิ่งต่างๆที่ได้จากมหาวิทยาลัยไปใช้ในการพัฒนาบ้านเมืองและประเทศชาติสืบต่อไป
+
+            </ul>
+            <a href="#ultimate" class="xcard__cta cta"></a>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="assets/instagram-logo-instagram-icon-transparent-free-png.webp
-            "
-            alt="ig icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.instagram.com/xs._unyx/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" >xs.unyx</a></p>
-        </div>
+
+        <div class="overlay xcards__inner"></div>
       </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+<div class="bubbles">
+  <span style="--i:11;"></span>
+  <span style="--i:12;"></span>
+  <span style="--i:24;"></span>
+  <span style="--i:10;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:23;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:21;"></span>
+  <span style="--i:15;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:26;"></span>
+  <span style="--i:17;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:11;"></span>
+  <span style="--i:11;"></span>
+  <span style="--i:12;"></span>
+  <span style="--i:24;"></span>
+  <span style="--i:10;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:23;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:21;"></span>
+  <span style="--i:15;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:26;"></span>
+  <span style="--i:17;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:11;"></span>
+  </section>
+  <section id="Ativity">
+
+    <div class="container">
+      <div class="box box-1"
+        style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1195987137477214258/412969429_839362211320246_7024503562062490216_n.jpg?ex=65b5fcd1&is=65a387d1&hm=6659b4f0010f6af95748280580f1e77d65063ab889bdd84ddd0876b472df39f8&=&format=webp&width=936&height=702)"
+        data-text="❤"></div>
+      <div class="box box-2"
+        style="--img: url(https://media.discordapp.net/attachments/1085792313399320578/1195987323431702578/357392501_607248171507418_3365314890005034851_n.jpg?ex=65b5fcfe&is=65a387fe&hm=546fc1deeab31c48d7f6ce0c20029b2650aa0f7c378ff31e88d29b8f5c5fafdf&=&format=webp&width=937&height=702)"
+        data-text="🧡"></div>
+      <div class="box box-3"
+        style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1195987460484776117/LINE_ALBUM_SME__240106_1.jpg?ex=65b5fd1e&is=65a3881e&hm=24f82592a9145c78b873b1c697d5d86845916647a90eb95c969829fc67e2e431&)"
+        data-text="💜"></div>
+      <div class="box box-4"
+        style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1195987493598789782/415514337_380066507877838_3588551690730102205_n.jpg?ex=65b5fd26&is=65a38826&hm=14b1e481b5a19c9e97392c44a3045a60881e11511a27ba0a2c102f00c4430ca1&)"
+        data-text="💚"></div>
+      <div class="box box-5"
+        style="--img: url(https://cdn.discordapp.com/attachments/1085792313399320578/1195987504189407242/LINE_ALBUM_412_240106_1.jpg?ex=65b5fd29&is=65a38829&hm=d584df0b7b8307ce5b49281d90c06e65d1807911e33547c0e1fb81d1e3607c8d&)"
+        data-text="💙"></div>
+    </div>
+  </section>
+  <div class="bubbles">
+    <span style="--i:11;"></span>
+    <span style="--i:12;"></span>
+    <span style="--i:24;"></span>
+    <span style="--i:10;"></span>
+    <span style="--i:14;"></span>
+    <span style="--i:23;"></span>
+    <span style="--i:18;"></span>
+    <span style="--i:16;"></span>
+    <span style="--i:19;"></span>
+    <span style="--i:20;"></span>
+    <span style="--i:22;"></span>
+    <span style="--i:25;"></span>
+    <span style="--i:18;"></span>
+    <span style="--i:21;"></span>
+    <span style="--i:15;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:26;"></span>
+    <span style="--i:17;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:11;"></span>
+    <span style="--i:11;"></span>
+    <span style="--i:12;"></span>
+    <span style="--i:24;"></span>
+    <span style="--i:10;"></span>
+    <span style="--i:14;"></span>
+    <span style="--i:23;"></span>
+    <span style="--i:18;"></span>
+    <span style="--i:16;"></span>
+    <span style="--i:19;"></span>
+    <span style="--i:20;"></span>
+    <span style="--i:22;"></span>
+    <span style="--i:25;"></span>
+    <span style="--i:18;"></span>
+    <span style="--i:21;"></span>
+    <span style="--i:15;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:26;"></span>
+    <span style="--i:17;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:11;"></span>
+    </section>
+
+  </div>
+  </section>
+  <section id="Certificat">
+    <main id="app">
+
+
+      <section class="cards">
+        <div class="card charizard animated"></div>
+        <div class="card pika animated"></div>
+        <div class="card eevee animated"></div>
+        <div class="card mewtwo animated"></div>
+      </section>
+      <style class="hover"></style>
+    </main>
+    <script src="index.js"></script>
+    <div class="bubbles">
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:11;"></span>
+  </section>
+  <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <svg width="0" height="0">
+        <filter id="f" x="-50%" y="-200%" width="200%" height="500%">
+          <feGaussianBlur stdDeviation="35"></feGaussianBlur>
+          <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+          <feComposite in="SourceGraphic"></feComposite>
+        </filter>
+      </svg>
+      <div class="contact-info-container">
+        <img src="./assets/email1.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:wasdf89@gmail.com" target="_blank">wasdf1589@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="assets/instagram-logo-instagram-icon-transparent-free-png.webp
+            " alt="ig icon" class="icon contact-icon" />
+        <p><a href="https://www.instagram.com/xs._unyx/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank">xs.unyx</a></p>
+      </div>
+    </div>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li></a><a href="#About">About</a></li>
             <li><a href="#Ativity">Ativity</a></li>
-            <li><a href="#Certificat" >Certificat </a></li>
+            <li><a href="#Certificat">Certificat </a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
         </div>
@@ -494,5 +495,6 @@
       updateFrameColor();
       setInterval(updateFrameColor, 1300);
     </script>
-  </body>
+    </body>
+
 </html>

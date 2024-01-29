@@ -4,13 +4,13 @@ const xcards = Array.from(document.querySelectorAll(".xcard"));
 const overlay = document.querySelector(".overlay");
 
 const applyOverlayMask = (e) => {
-    const overlayEl = e.currentTarget;
-    const x = e.clientX - xcardsContainer.getBoundingClientRect().left;
-    const y = e.clientY - xcardsContainer.getBoundingClientRect().top;
-  
-    overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
-  };
-  
+  const overlayEl = e.currentTarget;
+  const x = e.clientX - xcardsContainer.getBoundingClientRect().left;
+  const y = e.clientY - xcardsContainer.getBoundingClientRect().top;
+
+  overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
+};
+
 
 const createOverlayCta = (overlayxCard, ctaEl) => {
   const overlayCta = document.createElement("div");
@@ -18,7 +18,7 @@ const createOverlayCta = (overlayxCard, ctaEl) => {
   overlayCta.textContent = ctaEl.textContent;
   overlayCta.setAttribute("aria-hidden", true);
   overlayxCard.append(overlayCta);
-};  
+};
 
 const observer = new ResizeObserver((entries) => {
   entries.forEach((entry) => {
@@ -48,11 +48,11 @@ document.body.addEventListener("pointermove", applyOverlayMask);
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Hide preloader when content is loaded
-    const preloader = document.getElementById("preloader");
-    preloader.style.display = "none";
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  // Hide preloader when content is loaded
+  const preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
+});
 
 
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
       $card.addClass("animated");
     }, 2500);
   });
-  
+
   // Hide preloader when content is loaded
   $("#preloader").hide();
 });
