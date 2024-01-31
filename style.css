@@ -1535,10 +1535,7 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
+
 
 .btn-color-1:hover,
 .btn-color-2:hover {
@@ -1546,21 +1543,20 @@ section {
 }
 
 .btn-color-2:hover {
-  background: rgb(0, 0, 0);
+  background: #006eff;
   color: white;
+  border: rgb(0, 0, 0) 0.1rem solid;
+  box-shadow: 0 0 0 10px #0063dc44, 0 0 50px #0063dc, 0 0 100px #0063dc;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #ff0000;
   color: white;
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(0, 0, 0) 0.1rem solid;
+  box-shadow: 0 0 0 10px #dc4f4f44, 0 0 50px #dc4f4f, 0 0 100px #dc4f4f;
 }
 
 
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
 
 
 
